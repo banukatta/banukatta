@@ -1,0 +1,11 @@
+let count = 0;
+
+function printNumber() {
+    console.log(count);
+    count++;
+    if (count < 5) {
+        setTimeout(printNumber, 1000); // Print next number after 1 second
+    }
+}
+
+printNumber();
